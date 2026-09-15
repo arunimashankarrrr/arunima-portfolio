@@ -1,6 +1,6 @@
-# Arunima Shankar — Portfolio
+# Arunima Shankar's Portfolio
 
-A static, framework-free portfolio site. No build step — just HTML, CSS and a
+A static, framework-free portfolio site. No build step, just HTML, CSS and a
 few lines of JS.
 
 ```
@@ -32,18 +32,18 @@ npx serve .
 
 ## Hosting it
 
-The easiest options — all free, all take under five minutes:
+The easiest options: all free, all take under five minutes.
 
 **Netlify (drag and drop)**
 1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
 2. Drag the whole `site` folder onto the page
-3. Done — you get a live URL immediately, and can add a custom domain in Site settings
+3. Done: you get a live URL immediately, and can add a custom domain in Site settings
 
 **Vercel**
 ```bash
 npx vercel --cwd "site"
 ```
-Follow the prompts — no config needed.
+Follow the prompts, no config needed.
 
 **GitHub Pages**
 1. Push the contents of `site/` to a GitHub repo (as the repo root, or a `/docs` folder)
@@ -58,7 +58,7 @@ in the "Selected Work" section of `index.html`. Keep new images inside
 
 ## Notes
 
-- Fonts load from Google Fonts (Inter) over a CDN link — no local font files to manage.
+- Fonts load from Google Fonts (Inter) over a CDN link, no local font files to manage.
 - All imagery currently in `assets/img/` was sourced from the NiRA project
   documents (presentation boards + ideation booklet) and optimised for web
   (resized + compressed) from the originals.
