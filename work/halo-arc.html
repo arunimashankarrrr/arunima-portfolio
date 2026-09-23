@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js');</script>
 <title>Halo Arc · Arunima Shankar</title>
-<meta name="description" content="Halo Arc, an inclusive bone-conduction headset with a pull-to-slide fit mechanism. Industrial design project by Arunima Shankar, from research through to prototype.">
+<meta name="description" content="Halo Arc, an inclusive bone-conduction headset built around a pull-to-slide fit mechanism for afro hair and head sizes outside the average. Product design project by Arunima Shankar, covering the problem, research, development, engineering and final result.">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +14,12 @@
 </head>
 <body>
 
-<header class="site-header">
-  <a href="../index.html" class="brand">Arunima Shankar<small>Industrial &amp; Product Design</small></a>
-  <nav class="main-nav">
-    <a href="../index.html#work">Work</a>
-    <a href="../index.html#about">About</a>
-    <a href="../index.html#contact">Contact</a>
-  </nav>
-  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 1H22" stroke="currentColor" stroke-width="1.5"/><path d="M0 13H22" stroke="currentColor" stroke-width="1.5"/></svg>
-  </button>
-</header>
-
 <section class="hero">
   <img src="../assets/img/haloarc/hero/halo-final-worn.jpg" alt="Halo Arc worn in profile, a bone-conduction headset resting along the head">
   <div class="hero-content">
     <p class="kicker">Industrial Design · Inclusive Tech</p>
     <h1 class="hero-title">Halo Arc</h1>
-    <p class="hero-sub">Designed for listening, built for living</p>
+    <p class="hero-sub">An inclusive bone-conduction headset that fits the people existing hearing tech leaves out</p>
     <div class="hero-meta">
       <div><strong>Role</strong>Designer &amp; mechanism engineer</div>
       <div><strong>Scope</strong>Research → fit mechanism → prototype</div>
@@ -42,24 +31,27 @@
 
 <section class="section" id="overview">
   <div class="container">
-    <p class="lede fade-in">Most bone-conduction headsets are designed around a narrow, medicalised idea of "fit." Halo Arc starts from a pull-to-slide adjustment mechanism built to fit across the 5th–95th head-circumference percentile, resolving comfort and contact issues around afro hair and sweat mapping that user research surfaced early on, then iterated through physical prototyping and testing to validate it.</p>
+    <p class="lede fade-in">Most bone-conduction headsets are designed around a narrow, medicalised idea of fit, and it shows the moment someone tries to wear one over natural afro hair, glasses, or a head size outside the average. This page walks through how Halo Arc rebuilds that fit mechanism from research up, through sketching, prototyping and CAD, to a pull-to-slide headset validated by hand before it ever reached engineering.</p>
   </div>
 </section>
 
-<!-- 01 RESEARCH -->
+<!-- 01 THE PROBLEM -->
 <section class="section" id="research">
   <div class="container">
     <div class="section-head fade-in">
       <div>
-        <p class="kicker">01 · Research</p>
-        <p class="lede">Who this is for, what current hearing solutions get wrong, and where the head actually tolerates contact.</p>
+        <h2 class="kicker">01 · The Problem</h2>
+        <p class="lede">Standard headband and bone-conduction designs clamp at fixed points that assume short, straight hair and an average head circumference. For anyone outside that assumption, the result is a headset that slips, presses painfully on the temple, or won't sit flat at all, forcing a choice between comfort and being able to use the product.</p>
       </div>
       <p class="section-num">Insight</p>
     </div>
 
-    <div class="frame r-16-9 fade-in" style="margin-bottom:var(--gutter-s); background:#fff;">
-      <img src="../assets/img/haloarc/research/halo-research-empathy-map.jpg" alt="Empathy map of a young adult with partial hearing loss who feels self-conscious using traditional hearing aids">
-    </div>
+    <figure class="figure fade-in" style="margin-bottom:var(--gutter-s); background:#fff;">
+      <div class="frame r-16-9" style="background:#fff;">
+        <img src="../assets/img/haloarc/research/halo-research-empathy-map.jpg" alt="Empathy map of a young adult with partial hearing loss who feels self-conscious using traditional hearing aids">
+      </div>
+      <figcaption><span>Persona research</span><span>A young adult with partial hearing loss, self-conscious in traditional hearing aids</span></figcaption>
+    </figure>
 
     <div class="grid grid-2 fade-in">
       <figure class="figure">
@@ -71,6 +63,8 @@
         <figcaption><span>Anthropometric constraints</span><span>Exciter placement, bounding fit box</span></figcaption>
       </figure>
     </div>
+
+    <p class="lede fade-in" style="margin-bottom:32px;">That research pointed to three contact points the fit mechanism had to get right:</p>
 
     <div class="problem-row fade-in">
       <div class="item">
@@ -89,20 +83,26 @@
   </div>
 </section>
 
-<!-- 02 SKETCHES -->
+<!-- 02 APPROACH -->
 <section class="section" id="sketches" style="background:var(--bg-alt);">
   <div class="container">
     <div class="section-head fade-in">
       <div>
-        <p class="kicker">02 · Sketches</p>
+        <h2 class="kicker">02 · Approach</h2>
         <p class="lede">Exploring headband geometry, grip points and control placement by hand.</p>
       </div>
       <p class="section-num">Ideation</p>
     </div>
 
     <div class="grid grid-1 fade-in" style="grid-template-columns: 1fr; gap: var(--gutter-s);">
-      <div class="frame r-16-9" style="background:#fff;"><img src="../assets/img/haloarc/sketches/halo-sketch-headband.jpg" alt="Sketch sheet exploring headband forms, grip points, ear anthropometry and fit box tables"></div>
-      <div class="frame r-16-9" style="background:#fff;"><img src="../assets/img/haloarc/sketches/halo-sketch-controls.jpg" alt="Sketch sheet developing volume dial, capacitive touch button and charging point placement"></div>
+      <figure class="figure">
+        <div class="frame r-16-9" style="background:#fff;"><img src="../assets/img/haloarc/sketches/halo-sketch-headband.jpg" alt="Sketch sheet exploring headband forms, grip points, ear anthropometry and fit box tables"></div>
+        <figcaption><span>Headband geometry</span><span>Grip points, ear anthropometry and fit-box tables</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-16-9" style="background:#fff;"><img src="../assets/img/haloarc/sketches/halo-sketch-controls.jpg" alt="Sketch sheet developing volume dial, capacitive touch button and charging point placement"></div>
+        <figcaption><span>Controls layout</span><span>Volume dial, capacitive touch button, charging point</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -112,28 +112,34 @@
   <div class="container">
     <div class="section-head fade-in">
       <div>
-        <p class="kicker">03 · Development</p>
+        <h2 class="kicker">03 · Development</h2>
         <p class="lede">"Less medical, more personal": the earliest concept, developed forward into Halo Arc's final silhouette.</p>
       </div>
       <p class="section-num">Concepts</p>
     </div>
 
-    <div class="frame r-16-9 fade-in" style="margin-bottom:var(--gutter-s); background:#fff;">
-      <img src="../assets/img/haloarc/development/halo-concept-pink.jpg" alt="Early concept render, a soft, personal headband form, described as less developed but with a big market">
-    </div>
+    <figure class="figure fade-in" style="margin-bottom:var(--gutter-s); background:#fff;">
+      <div class="frame r-16-9" style="background:#fff;">
+        <img src="../assets/img/haloarc/development/halo-concept-pink.jpg" alt="Early concept render, a soft, personal headband form, described as less developed but with a big market">
+      </div>
+      <figcaption><span>Concept 1</span><span>Softer, less clinical starting form</span></figcaption>
+    </figure>
 
-    <div class="frame r-16-9 fade-in" style="background:#fff;">
-      <img src="../assets/img/haloarc/development/halo-form-evolution.jpg" alt="Four-stage form evolution from initial render through to the final component layout">
-    </div>
+    <figure class="figure fade-in">
+      <div class="frame r-16-9" style="background:#fff;">
+        <img src="../assets/img/haloarc/development/halo-form-evolution.jpg" alt="Four-stage form evolution from initial render through to the final component layout">
+      </div>
+      <figcaption><span>Form evolution</span><span>Four stages from initial render to final component layout</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- 04 CAD & ENGINEERING -->
+<!-- 04 ENGINEERING -->
 <section class="section" id="cad" style="background:var(--bg-alt);">
   <div class="container">
     <div class="section-head fade-in">
       <div>
-        <p class="kicker">04 · CAD &amp; Engineering</p>
+        <h2 class="kicker">04 · Engineering</h2>
         <p class="lede">A pull-to-slide locking mechanism with a 7mm travel range, detailed down to draft angles and slot tolerances.</p>
       </div>
       <p class="section-num">Detail design</p>
@@ -159,22 +165,34 @@
   <div class="container">
     <div class="section-head fade-in">
       <div>
-        <p class="kicker">05 · Prototype</p>
+        <h2 class="kicker">05 · Prototype</h2>
         <p class="lede">Foam and cardboard mock-ups, fit-tested on real heads to validate the clamping geometry before committing it to CAD.</p>
       </div>
       <p class="section-num">Physical testing</p>
     </div>
 
     <div class="grid grid-4 fade-in">
-      <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-foam-alone.jpg" alt="Foam and cardboard headband mock-up, unworn"></div>
-      <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-foam-loop.jpg" alt="Foam and cardboard headband mock-up, full loop"></div>
-      <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-fit-1.jpg" alt="Fit-testing the cardboard mock-up on a real head, side view"></div>
-      <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-fit-2.jpg" alt="Fit-testing the foam and cardboard mock-up, checking clamp position behind the ear"></div>
+      <figure class="figure">
+        <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-foam-alone.jpg" alt="Foam and cardboard headband mock-up, unworn"></div>
+        <figcaption><span>Mock-up, unworn</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-foam-loop.jpg" alt="Foam and cardboard headband mock-up, full loop"></div>
+        <figcaption><span>Full loop, clamp curvature</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-fit-1.jpg" alt="Fit-testing the cardboard mock-up on a real head, side view"></div>
+        <figcaption><span>Fit-testing, side view</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4"><img src="../assets/img/haloarc/prototype/halo-proto-fit-2.jpg" alt="Fit-testing the foam and cardboard mock-up, checking clamp position behind the ear"></div>
+        <figcaption><span>Checking clamp position</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- 06 FINAL -->
+<!-- 06 RESULT -->
 <section class="section full-bleed fade-in" id="final" style="padding:0; background:#0c0b09;">
   <div class="frame" style="background:#0c0b09;">
     <img src="../assets/img/haloarc/hero/halo-final-title.jpg" alt="Halo Arc final render, designed for listening, built for living" style="object-fit:contain;">
@@ -185,17 +203,29 @@
   <div class="container">
     <div class="section-head fade-in" style="border-color:rgba(255,255,255,.14);">
       <div>
-        <p class="kicker" style="color:rgba(255,255,255,.55);">06 · Final</p>
-        <p class="lede" style="color:rgba(255,255,255,.75);">Halo Arc: a fit mechanism designed around the people existing hearing tech overlooks, validated by hand before it ever reached CAD.</p>
+        <h2 class="kicker" style="color:rgba(255,255,255,.55);">06 · Result</h2>
+        <p class="lede" style="color:rgba(255,255,255,.75);">The result is a bone-conduction headset that adjusts smoothly across the 5th to 95th percentile of head sizes and sits comfortably over natural afro hair, without the pressure points or slipping that rule out most hearing tech on the market today, validated by hand before it ever reached CAD.</p>
       </div>
       <p class="section-num" style="color:rgba(255,255,255,.4);">Final renders</p>
     </div>
 
     <div class="grid grid-4 fade-in" style="margin-bottom:clamp(28px,4vw,44px);">
-      <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-side.jpg" alt="Halo Arc final render, side profile on black"></div>
-      <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-pair.jpg" alt="Halo Arc final render, two finishes shown together"></div>
-      <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-diagonal.jpg" alt="Halo Arc final render, diagonal detail view"></div>
-      <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-band.jpg" alt="Halo Arc final render, full band form"></div>
+      <figure class="figure">
+        <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-side.jpg" alt="Halo Arc final render, side profile on black"></div>
+        <figcaption style="color:rgba(255,255,255,.5);"><span>Side profile</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-pair.jpg" alt="Halo Arc final render, two finishes shown together"></div>
+        <figcaption style="color:rgba(255,255,255,.5);"><span>Two finishes</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-diagonal.jpg" alt="Halo Arc final render, diagonal detail view"></div>
+        <figcaption style="color:rgba(255,255,255,.5);"><span>Detail view</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="frame r-3-4" style="background:#000;"><img src="../assets/img/haloarc/hero/halo-final-band.jpg" alt="Halo Arc final render, full band form"></div>
+        <figcaption style="color:rgba(255,255,255,.5);"><span>Full band form</span></figcaption>
+      </figure>
     </div>
 
     <a class="btn" href="../index.html#work" style="border-color:rgba(255,255,255,.4); color:#fff;">Back to Work
